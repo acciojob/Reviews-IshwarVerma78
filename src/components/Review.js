@@ -26,15 +26,17 @@ function Review(){
             <h1 id="review-heading">Our Reviews</h1>
 
             <div className="review">
-                <img className="person-info" src={data[index].image} alt="" />
+                <img className="person-img" src={data[index].image} alt="" />
                 <h2 id={data[index].id} className="author">{data[index].name}</h2>
                 <p className="job">{data[index].job}</p>
                 <p className="info">{data[index].text}</p>
+
+                <button className="prev-btn" onClick={handlePrev}>Previous</button>
+                <button className="next-btn" onClick={handleNext}>Next</button>
+                <button className="random-btn" onClick={handleRandom}>surprise me</button>
+
             </div>
         
-            <button className="prev-btn" onClick={handlePrev}>Previous</button>
-            <button className="next-btn" onClick={handleNext}>Next</button>
-            <button className="random-btn" onClick={handleRandom}>surprise me</button>
             
 {/* 
             {
