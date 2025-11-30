@@ -23,7 +23,7 @@ function Review(){
 
     return(
         <>
-            <h1 id="review-heading">Our Reviews</h1>
+            {/* <h1 id="review-heading">Our Reviews</h1> */}
 
             <div className="review">
                 <img className="person-img" src={data[index].image} alt="" />
