@@ -27,7 +27,7 @@ function Review(){
 
             <div className="review">
                 <img className="person-img" src={data[index].image} alt="" />
-                <h2 id={data[index].id} className="author">{data[index].name}</h2>
+                <h2 id={"author-"+data[index].id} className="author">{data[index].name}</h2>
                 <p className="job">{data[index].job}</p>
                 <p className="info">{data[index].text}</p>
 
